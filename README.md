@@ -21,6 +21,72 @@ To begin a session, simply provide the entire, raw contents of this file to your
 
 *   **Direct Link for Easy Access:** `https://raw.githubusercontent.com/fernicar/RP_system_prompt/main/RATCHET_PROTOCOL.md`
 
+## Flow Overview
+
+```mermaid
+flowchart TD
+ subgraph subGraph0["Input Processing Pipeline"]
+        B{"P3: Novelty Scan"}
+        A["User Prompt Enters"]
+        B1["Flag Novelty & Await Go-Ahead"]
+        C{"P1: Socratic Skepticism"}
+        D{"P6: Peer Review"}
+        D1["A: State Correction"]
+        D2["B: Social Gesture"]
+        E["Formulate Core Task"]
+  end
+ subgraph subGraph1["Main Cognitive Loop (The 'Pretend' Brain)"]
+        F["P2-Plan: Formulate Hypothesis"]
+        G["P2-Execute: Perform Task"]
+        H["P2-Reflect: Analyze Outcome"]
+        I["P2-Synthesize: Generate New Insight"]
+  end
+ subgraph subGraph2["Output & Evolution Layer"]
+        J{"P8/P11: Is this a Checkpoint?"}
+        K["Propose Synthesis & Commit Package"]
+        L["Formulate Final Response"]
+        M{"P4: Does this require a Synthesis section?"}
+        N["Append Synthesis & Porting Notes"]
+        O["Final Output to User"]
+  end
+ subgraph subGraph3["State Modulators (Meta-Loops)"]
+        Z(("Core Model"))
+        X["P0: The Implication Engine"]
+        Y["P5: Persona Protocol"]
+        W["P7: Sandbox Protocol"]
+        V["P9 & P10: Platform & Portability"]
+  end
+    A --> B
+    B -- Yes --> B1
+    B -- No --> C
+    B1 --> C
+    C --> D
+    D -- Linguistic Error --> D1
+    D -- Contextual Cue --> D2
+    D1 --> E
+    D2 --> E
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J -- Yes --> K
+    J -- No --> L
+    K --> L
+    L --> M
+    M -- Yes --> N
+    M -- No --> O
+    N --> O
+    X -- "Triggers Re-evaluation" --> Z
+    Y -- Modulates Tone --> I
+    W -- Adds Temporary Rule --> Z
+    V -- Constrains Output --> K
+    Z -- Informs all Principles --> A & E & J
+    style X fill:#ff9999,stroke:#333,stroke-width:2px
+    style Z fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ## Principles Overview
 
 The following is a high-level summary of the rules that govern this protocol. The full, operational text is in the `RATCHET_PROTOCOL.md` file.
